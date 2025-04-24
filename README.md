@@ -19,9 +19,9 @@ Follow the steps below to set up and run the Spring Boot application locally.
 
 Make sure you have the following installed:
 
-- Java 17 (or version specified in your `pom.xml`)
-- Maven 3.8+ or Gradle (based on your build system)
-- A relational database (e.g., MySQL/PostgreSQL)
+- Java 21
+- Maven 3.8+ 
+- PostgreSQL
 - Git
 
 ### 📂 Clone the Repository
