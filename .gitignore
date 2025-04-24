@@ -43,3 +43,4 @@ application-prod.properties
 Thumbs.db    # Windows
 
 /test-output/
+src/main/resources/application.properties
