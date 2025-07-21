@@ -1,31 +1,50 @@
-# TracknTrade - Inventory and Finance Management Platform
+# 📊 TrackNTrade – Finance Tracker Backend
 
-TracknTrade is a robust backend platform built with Spring Boot to streamline inventory and financial management operations for businesses. The application offers efficient tracking of stock levels, supplier and product management, and financial record-keeping. It serves as the core backend system for a larger solution that could be extended with a frontend or mobile interface.
-
-## 🚀 Features
-
-- 📦 Inventory tracking with product and supplier management
-- 💰 Financial management and reporting tools
-- 🔌 RESTful APIs for integration with frontend clients
-- 🧱 Scalable and modular Spring Boot architecture
+TrackNTrade is a personal finance tracking system built with **Java + Spring Boot** and **PostgreSQL**. It helps users manage monthly income, fixed liabilities, savings, and track spendable balance with alerts when funds run low.
 
 ---
 
-## 🛠️ Getting Started
+## 🚀 Features
 
-Follow the steps below to set up and run the Spring Boot application locally.
+- ✅ User registration & profile
+- ✅ Monthly income entry
+- ✅ Configurable fixed expenses (EMIs, subscriptions, etc.)
+- ✅ Auto-calculated savings & spendable balance
+- ✅ Expense tracking with categories
+- ✅ Warnings when spendable balance drops below 10%
+- 📅 Per-month financial breakdown
 
-### ✅ Prerequisites
+---
 
-Make sure you have the following installed:
+## 🏗️ Tech Stack
 
-- Java 21
-- Maven 3.8+ 
+- **Backend:** Java 17+, Spring Boot
+- **Database:** PostgreSQL
+- **ORM:** Spring Data JPA (Hibernate)
+- **Build Tool:** Maven
+
+---
+
+## ⚙️ Project Structure
+
+src/
+├── controller/ # REST APIs
+├── model/ # JPA entities
+├── repository/ # Spring Data JPA Repos
+├── service/ # Business logic
+└── TrackntradeApplication.java
+
+## 📦 Requirements
+
+- Java 17+
+- Maven
 - PostgreSQL
-- Git
 
-### 📂 Clone the Repository
+```angular2html
+# Clone the repo
+git clone https://github.com/your-username/trackntrade-backend.git
+cd trackntrade-backend
 
-```bash
-git clone https://github.com/your-username/trackntrade.git
-cd trackntrade
+# Run with Maven
+./mvnw spring-boot:run
+```

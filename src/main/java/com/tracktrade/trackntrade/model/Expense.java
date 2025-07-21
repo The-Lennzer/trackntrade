@@ -1,32 +1,30 @@
 package com.tracktrade.trackntrade.model;
 
+import com.tracktrade.trackntrade.model.User;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
+public class Expense {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
-    private String name;
-    private String email;
-    private String password;
-    private Double monthlyIntake;
-    private Double savings;
+    private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
 
-    @Enumerated(EnumType.STRING)
-    private MonthMode monthMode; // fresh | cumulative
+    private Double value;
+    private String category;
+    private String color;
 
-    public enum MonthMode {
-        FRESH,
-        CUMULATIVE
-    }
+    @ManyToOne
+    private User user;
 }
